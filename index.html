@@ -133,8 +133,9 @@
     <!-- Navigation Bar -->
     <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
         <div class="glass-panel mx-4 mt-6 rounded-2xl px-6 py-4 flex justify-between items-center max-w-5xl md:mx-auto">
+            <!-- UPDATED: Navbar Name -->
             <a href="#" class="font-mono text-xl font-bold text-white tracking-tighter">
-                <span class="text-primary opacity-70">&lt;</span> JD <span class="text-primary opacity-70">/&gt;</span>
+                <span class="text-primary opacity-70">&lt;</span> JD Coder <span class="text-primary opacity-70">/&gt;</span>
             </a>
             
             <div class="hidden md:flex space-x-8 text-sm font-mono text-textMuted">
@@ -178,8 +179,9 @@
                 <h2 class="text-3xl md:text-5xl font-bold text-textMuted mb-6 font-mono">
                     > <span id="typing-text" class="text-white"></span><span class="cursor"></span>
                 </h2>
+                <!-- UPDATED: Coding related sentence -->
                 <p class="max-w-2xl text-lg text-textMuted mb-10 leading-relaxed font-light">
-                    Transforming coffee into logic. I build digital experiences, solve complex problems, and occasionally break things to see how they work.
+                    Compiling thoughts into reality. I write clean code, debug complex logic, and build seamless digital experiences line by line.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#contact" class="px-8 py-3 rounded-xl bg-primary text-black font-mono font-bold hover:shadow-[0_0_20px_rgba(0,229,255,0.4)] transition-all duration-300 transform hover:-translate-y-1">
@@ -224,7 +226,8 @@
                             <p><span class="syntax-property">role</span>: <span class="syntax-string">'Code Enthusiast'</span>,</p>
                             <p><span class="syntax-property">location</span>: <span class="syntax-string">'India'</span>,</p>
                             <p><span class="syntax-property">skills</span>: [<span class="syntax-string">'HTML/CSS'</span>, <span class="syntax-string">'JavaScript'</span>, <span class="syntax-string">'Python'</span>, <span class="syntax-string">'React'</span>],</p>
-                            <p><span class="syntax-property">hobbies</span>: [<span class="syntax-string">'Coding'</span>, <span class="syntax-string">'Gaming'</span>, <span class="syntax-string">'Exploring Tech'</span>],</p>
+                            <!-- UPDATED: Profile Hobbies -->
+                            <p><span class="syntax-property">hobbies</span>: [<span class="syntax-string">'Coding'</span>, <span class="syntax-string">'Reading'</span>, <span class="syntax-string">'Writing'</span>, <span class="syntax-string">'Gaming'</span>, <span class="syntax-string">'Tech'</span>],</p>
                             <p class="mt-2"><span class="syntax-property">execute</span>: <span class="syntax-keyword">function</span>() {</p>
                             <p class="pl-4"><span class="syntax-keyword">return</span> <span class="syntax-string">"Writing logic to solve real-world problems while constantly learning."</span>;</p>
                             <p>}</p>
@@ -245,16 +248,34 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Hobby 1 -->
+                <!-- Hobby 1 (Kept old ones, adding new ones) -->
                 <div class="glass-panel p-8 rounded-3xl group cursor-pointer">
                     <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all duration-300 border border-white/5 group-hover:border-primary/30 group-hover:scale-110">
                         <i class="fas fa-code text-2xl text-textMuted group-hover:text-primary transition-colors"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3 tracking-tight">Web Development</h4>
-                    <p class="text-textMuted text-sm font-light leading-relaxed">Crafting clean, responsive, and interactive digital interfaces. I love turning empty screens into functional art.</p>
+                    <h4 class="text-xl font-bold text-white mb-3 tracking-tight">Coding</h4>
+                    <p class="text-textMuted text-sm font-light leading-relaxed">Building digital experiences, solving complex logic problems, and constantly learning new technologies to write cleaner code.</p>
                 </div>
 
-                <!-- Hobby 2 -->
+                <!-- ADDED: Hobby Reading -->
+                <div class="glass-panel p-8 rounded-3xl group cursor-pointer">
+                    <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all duration-300 border border-white/5 group-hover:border-primary/30 group-hover:scale-110">
+                        <i class="fas fa-book-open text-2xl text-textMuted group-hover:text-primary transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3 tracking-tight">Reading</h4>
+                    <p class="text-textMuted text-sm font-light leading-relaxed">Diving into books to expand my knowledge. Whether it's tech documentation, self-improvement, or fiction, I love exploring new ideas.</p>
+                </div>
+
+                <!-- ADDED: Hobby Writing -->
+                <div class="glass-panel p-8 rounded-3xl group cursor-pointer">
+                    <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all duration-300 border border-white/5 group-hover:border-primary/30 group-hover:scale-110">
+                        <i class="fas fa-pen-nib text-2xl text-textMuted group-hover:text-primary transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3 tracking-tight">Writing</h4>
+                    <p class="text-textMuted text-sm font-light leading-relaxed">Expressing my thoughts and documenting my journey. I enjoy jotting down ideas, tech notes, and sharing what I learn along the way.</p>
+                </div>
+
+                <!-- Hobby 4 -->
                 <div class="glass-panel p-8 rounded-3xl group cursor-pointer">
                     <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all duration-300 border border-white/5 group-hover:border-primary/30 group-hover:scale-110">
                         <i class="fas fa-microchip text-2xl text-textMuted group-hover:text-primary transition-colors"></i>
@@ -263,8 +284,8 @@
                     <p class="text-textMuted text-sm font-light leading-relaxed">Always keeping an eye on the latest frameworks, tools, and tech news. The learning curve is my comfort zone.</p>
                 </div>
 
-                <!-- Hobby 3 -->
-                <div class="glass-panel p-8 rounded-3xl group cursor-pointer">
+                <!-- Hobby 5 -->
+                <div class="glass-panel p-8 rounded-3xl group cursor-pointer md:col-span-2 lg:col-span-1">
                     <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all duration-300 border border-white/5 group-hover:border-primary/30 group-hover:scale-110">
                         <i class="fas fa-gamepad text-2xl text-textMuted group-hover:text-primary transition-colors"></i>
                     </div>
