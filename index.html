@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -374,4 +373,249 @@
                     <div class="absolute top-0 right-0 w-16 h-16 bg-cyber-purple/10 blur-xl group-hover:bg-cyber-purple/30 transition-all"></div>
                     <div class="text-4xl text-cyber-purple/50 mb-6 group-hover:text-cyber-purple transition-colors drop-shadow-[0_0_5px_rgba(189,0,255,0)] group-hover:drop-shadow-[0_0_10px_rgba(189,0,255,0.8)]">
                         <i class="fas fa-microchip"></i>
-          
+                    </div>
+                    <h4 class="font-cyber text-xl font-bold text-white mb-3">TECH_EXPLORER</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mt-2 group-hover:text-gray-200 transition-colors">
+                        Always keeping an eye on the latest frameworks, tools, and tech news. The learning curve is my comfort zone.
+                    </p>
+                    <div class="mt-6 flex items-center justify-between border-t border-cyber-purple/30 pt-3">
+                        <span class="text-xs text-cyber-purple animate-pulse">STATUS: SCANNING</span>
+                        <i class="fas fa-radar text-cyber-purple"></i>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="cyber-panel p-8 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-16 h-16 bg-cyber-cyan/10 blur-xl group-hover:bg-cyber-cyan/30 transition-all"></div>
+                    <div class="text-4xl text-cyber-cyanDark mb-6 group-hover:text-cyber-cyan transition-colors drop-shadow-[0_0_5px_rgba(0,243,255,0)] group-hover:drop-shadow-[0_0_10px_rgba(0,243,255,0.8)]">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4 class="font-cyber text-xl font-bold text-white mb-3">GAMING</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mt-2 group-hover:text-gray-200 transition-colors">
+                        Immersing myself in virtual worlds. It's not just playing; it's appreciating the game logic and design mechanics.
+                    </p>
+                    <div class="mt-6 flex items-center justify-between border-t border-cyber-cyanDark/30 pt-3">
+                        <span class="text-xs text-cyber-cyan animate-pulse">STATUS: ONLINE</span>
+                        <i class="fas fa-signal text-cyber-cyan"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-32 text-center max-w-3xl mx-auto pb-20">
+            <!-- Adjusted padding (p-5 instead of p-10) for mobile to prevent text cut-off -->
+            <div class="cyber-panel p-5 sm:p-10 md:p-14 relative overflow-hidden mx-2 sm:mx-0">
+                <!-- Background decorative grid -->
+                <div class="absolute inset-0 bg-[linear-gradient(rgba(0,243,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,243,255,0.05)_1px,transparent_1px)] bg-[size:20px_20px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_10%,transparent_80%)]"></div>
+                
+                <div class="absolute top-4 right-4 text-cyber-red text-xs font-bold animate-pulse">
+                    <i class="fas fa-satellite-dish mr-1"></i> ENCRYPTED UPLINK
+                </div>
+                
+                <h3 class="font-cyber text-cyber-cyanDark mb-2 text-sm tracking-widest uppercase mt-6 md:mt-0">0x03 // Transmission</h3>
+                <!-- Reduced base text size (text-2xl) and added break-words for narrow screens -->
+                <h2 class="font-cyber text-2xl sm:text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight break-words">Establish_Ping()</h2>
+                
+                <p class="text-gray-400 mb-10 leading-relaxed text-sm max-w-lg mx-auto">
+                    Secure channel is open. Drop a payload in my inbox for project collaborations, technical queries, or general comms. Awaiting handshake.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <!-- Updated Instagram link and text -->
+                    <a href="https://instagram.com/jd._._____" target="_blank" class="w-full sm:w-auto px-6 py-4 border-2 border-cyber-purple bg-cyber-purple/10 hover:bg-cyber-purple text-white hover:shadow-[0_0_20px_#bd00ff] transition-all duration-300 flex items-center justify-center gap-3 group font-cyber font-bold tracking-widest">
+                        <i class="fab fa-instagram text-2xl group-hover:animate-bounce"></i>
+                        <span class="lowercase">jd._._____</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-xs font-mono bg-cyber-black border-t-2 border-cyber-cyan/50 relative z-10 shadow-[0_-5px_15px_rgba(0,243,255,0.1)]">
+        <p class="text-gray-500 mb-1">NETWORK_NODE ESTABLISHED BY <span class="text-cyber-cyan font-bold">JD</span> &copy; 2026</p>
+        <p class="text-cyber-purple font-bold tracking-widest">// CONNECTION_TERMINATED //</p>
+    </footer>
+
+    <script>
+        // --- 1. Typewriter Effect ---
+        const words = ["Code Enthusiast", "I write Code", "I fix Bugs", "I build Web Apps"];
+        let i = 0;
+        let timer;
+        const typingEl = document.getElementById('typing-text');
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) {
+                    typingEl.innerHTML += word.shift();
+                } else {
+                    setTimeout(deletingEffect, 2500); // Pause before deleting
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 80); // Typing speed
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function() {
+                if (word.length > 0) {
+                    word.pop();
+                    typingEl.innerHTML = word.join("");
+                } else {
+                    i = (i + 1) % words.length;
+                    setTimeout(typingEffect, 500); // Pause before typing next
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 40); // Deleting speed
+            };
+            loopDeleting();
+        }
+        setTimeout(typingEffect, 1000);
+
+        // --- 2. Mobile Menu ---
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // --- 3. Network/Particle Canvas Background (Modern Cyber-Sec Vibe) ---
+        const canvas = document.getElementById('network-canvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        });
+
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+            update() {
+                if (this.x > canvas.width || this.x < 0) { this.directionX = -this.directionX; }
+                if (this.y > canvas.height || this.y < 0) { this.directionY = -this.directionY; }
+                this.x += this.directionX;
+                this.y += this.directionY;
+                this.draw();
+            }
+        }
+
+        function initParticles() {
+            particlesArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 15000;
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 2) + 1;
+                let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+                let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+                let directionX = (Math.random() * 1) - 0.5;
+                let directionY = (Math.random() * 1) - 0.5;
+                // Mix of Cyan and Purple particles
+                let color = Math.random() > 0.5 ? '#00f3ff' : '#bd00ff';
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        function animateParticles() {
+            requestAnimationFrame(animateParticles);
+            ctx.clearRect(0, 0, innerWidth, innerHeight);
+            
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+            }
+            connectParticles();
+        }
+
+        function connectParticles() {
+            let opacityValue = 1;
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)) + 
+                                   ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+                    if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+                        opacityValue = 1 - (distance / 20000);
+                        ctx.strokeStyle = 'rgba(0, 243, 255,' + opacityValue * 0.2 + ')';
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        initParticles();
+        animateParticles();
+
+        // --- 4. The "Serka" Advanced Cyber Search Interaction ---
+        function handleCyberSearch(e, deviceType) {
+            e.preventDefault();
+            const inputId = deviceType === 'desktop' ? 'desktop-search-input' : 'mobile-search-input';
+            const input = document.getElementById(inputId);
+            const container = input.closest('.serka-container');
+            const query = input.value.trim();
+            
+            if(query) {
+                const originalPlaceholder = input.placeholder;
+                const originalColor = input.style.color;
+                
+                input.value = '';
+                input.disabled = true;
+                container.style.borderColor = '#ff003c'; // Change border to red
+                container.style.boxShadow = '0 0 20px rgba(255, 0, 60, 0.4)';
+                
+                // Hacker sequence
+                let sequence = [
+                    `[>] ENCRYPTING "${query}"...`,
+                    `[!] BYPASSING FIREWALL...`,
+                    `[X] ACCESS DENIED: ROOT REQ`
+                ];
+                
+                let step = 0;
+                
+                input.classList.remove('text-cyber-cyan');
+                input.classList.add('text-cyber-red');
+                
+                const interval = setInterval(() => {
+                    if (step < sequence.length) {
+                        input.placeholder = sequence[step];
+                        step++;
+                    } else {
+                        clearInterval(interval);
+                        // Reset after animation
+                        setTimeout(() => {
+                            input.disabled = false;
+                            input.placeholder = originalPlaceholder;
+                            input.classList.remove('text-cyber-red');
+                            input.classList.add('text-cyber-cyan');
+                            container.style.borderColor = ''; // Reset border
+                            container.style.boxShadow = ''; // Reset shadow
+                            input.focus();
+                        }, 1500);
+                    }
+                }, 600); // Speed of sequence change
+            }
+        }
+    </script>
+</body>
+</html>
